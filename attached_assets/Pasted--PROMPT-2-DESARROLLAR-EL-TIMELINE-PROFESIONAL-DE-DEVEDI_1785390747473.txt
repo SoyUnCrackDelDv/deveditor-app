@@ -1,0 +1,368 @@
+# PROMPT 2 — DESARROLLAR EL TIMELINE PROFESIONAL DE DEVEDITOR
+
+La interfaz principal de DevEditor ya está creada.
+
+Ahora quiero desarrollar **únicamente el Timeline**, sin implementar todavía la edición real de vídeo.
+
+## IMPORTANTE
+
+No implementes FFmpeg.
+
+No renderices vídeos.
+
+No exportes archivos.
+
+No proceses audio.
+
+No reproduzcas vídeo.
+
+Todo debe funcionar con datos simulados (mock data).
+
+El objetivo es crear un Timeline visual e interactivo idéntico al comportamiento de un editor profesional.
+
+---
+
+# OBJETIVO
+
+Construir un Timeline moderno inspirado en:
+
+* CapCut Desktop
+* Adobe Premiere Pro
+* DaVinci Resolve
+
+No copiar su diseño, solo el comportamiento.
+
+---
+
+# ESTRUCTURA
+
+Crear un componente llamado:
+
+TimelineEditor
+
+Que ocupe todo el ancho disponible.
+
+Debe incluir:
+
+* Regla de tiempo superior.
+* Playhead (línea roja).
+* Indicador de tiempo.
+* Área de pistas.
+* Scroll horizontal.
+* Scroll vertical.
+* Zoom.
+
+---
+
+# PISTAS
+
+Crear inicialmente:
+
+* 3 pistas de vídeo.
+* 2 pistas de audio.
+* 2 pistas de subtítulos.
+
+Cada pista debe tener:
+
+* Nombre.
+* Icono.
+* Botón de ocultar.
+* Botón de bloquear.
+* Botón de silenciar (audio).
+* Altura ajustable.
+
+---
+
+# CLIPS
+
+Los clips deben ser completamente interactivos.
+
+Cada clip debe poder:
+
+Seleccionarse.
+
+Moverse horizontalmente.
+
+Moverse entre pistas.
+
+Duplicarse.
+
+Eliminarse.
+
+Cambiar de color.
+
+Renombrarse.
+
+Mostrar duración.
+
+Mostrar miniatura simulada.
+
+Mostrar icono según el tipo:
+
+Video
+
+Audio
+
+Subtítulo
+
+---
+
+# REDIMENSIONAR
+
+Al arrastrar los extremos del clip:
+
+Debe cambiar visualmente su duración.
+
+No hace falta cortar vídeo todavía.
+
+Solo cambiar el tamaño del bloque.
+
+---
+
+# PLAYHEAD
+
+Crear un Playhead profesional.
+
+Debe:
+
+Poder arrastrarse.
+
+Moverse por toda la línea de tiempo.
+
+Mostrar el tiempo actual.
+
+Seguir el zoom.
+
+Mantenerse visible.
+
+---
+
+# REGLA DE TIEMPO
+
+Mostrar:
+
+00:00
+
+00:05
+
+00:10
+
+00:15
+
+etc.
+
+Debe adaptarse automáticamente al nivel de zoom.
+
+---
+
+# ZOOM
+
+Agregar controles:
+
+*
+
+-
+
+Slider
+
+Ctrl + rueda del ratón
+
+Pinch to Zoom (móvil)
+
+El Timeline debe ampliarse y reducirse suavemente.
+
+---
+
+# SCROLL
+
+Scroll horizontal independiente.
+
+Scroll vertical para muchas pistas.
+
+Mantener la regla superior fija.
+
+Mantener el nombre de las pistas fijo.
+
+---
+
+# SNAP
+
+Implementar un sistema de magnetismo.
+
+Cuando un clip se acerca a otro:
+
+Debe alinearse automáticamente.
+
+Mostrar una guía visual.
+
+---
+
+# MULTISELECCIÓN
+
+Permitir seleccionar varios clips mediante:
+
+Ctrl + clic.
+
+Shift + clic.
+
+Arrastrando un cuadro de selección.
+
+---
+
+# ATAJOS
+
+Preparar los siguientes atajos:
+
+Supr → eliminar.
+
+Ctrl + C
+
+Ctrl + V
+
+Ctrl + Z
+
+Ctrl + Shift + Z
+
+Ctrl + D
+
+Espacio → Play/Pause (simulado).
+
+---
+
+# MENÚ CONTEXTUAL
+
+Al hacer clic derecho sobre un clip:
+
+Mostrar un menú con:
+
+Duplicar.
+
+Eliminar.
+
+Cambiar color.
+
+Renombrar.
+
+Bloquear.
+
+Desbloquear.
+
+---
+
+# COLORES
+
+Cada tipo de clip debe tener un color distinto.
+
+Vídeo.
+
+Audio.
+
+Subtítulos.
+
+El usuario también debe poder personalizar los colores.
+
+---
+
+# SUBTÍTULOS
+
+Los clips de subtítulos deben mostrar:
+
+Texto.
+
+Duración.
+
+Color activo.
+
+Color normal.
+
+Animación (simulada).
+
+---
+
+# RENDIMIENTO
+
+Preparar el Timeline para soportar:
+
+Más de 1000 clips.
+
+Más de 50 pistas.
+
+Utilizar virtualización para que el rendimiento siga siendo excelente.
+
+---
+
+# COMPONENTES
+
+Crear componentes reutilizables como:
+
+TimelineEditor
+
+TimelineHeader
+
+TimeRuler
+
+Playhead
+
+TrackList
+
+Track
+
+TrackHeader
+
+Clip
+
+ResizeHandle
+
+ZoomControls
+
+SelectionBox
+
+ContextMenu
+
+TimelineGrid
+
+SnapGuide
+
+TrackControls
+
+TimelineScrollbar
+
+---
+
+# ANIMACIONES
+
+Utilizar Framer Motion para:
+
+Seleccionar clips.
+
+Mover clips.
+
+Redimensionar.
+
+Mostrar menús.
+
+Hover.
+
+Indicadores de selección.
+
+---
+
+# CÓDIGO
+
+Mantener una arquitectura limpia.
+
+Separar componentes.
+
+Separar hooks.
+
+Separar tipos.
+
+Separar utilidades.
+
+Preparar el código para que en el siguiente paso sea muy fácil conectar el Timeline con vídeos reales mediante FFmpeg y el reproductor.
+
+## IMPORTANTE
+
+No implementes edición real de vídeo todavía.
+
+Todo debe ser una simulación completamente interactiva, con una experiencia visual de calidad profesional y lista para integrarse con el resto del editor.

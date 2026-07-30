@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "DevEditor"
+version = "1.0.0"
+id = "artifacts/deveditor"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19970
+
+[services.development]
+run = "pnpm --filter @workspace/deveditor run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/deveditor", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/deveditor/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19970"
+BASE_PATH = "/"

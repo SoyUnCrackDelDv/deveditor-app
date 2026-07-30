@@ -1,0 +1,284 @@
+# PROMPT 1 — CREAR ÚNICAMENTE LA INTERFAZ DE DEVEDITOR
+
+Quiero que desarrolles **únicamente la interfaz (UI/UX)** de una aplicación web profesional llamada **DevEditor**.
+
+## IMPORTANTE
+
+No implementes ninguna lógica todavía.
+
+No agregues backend.
+
+No agregues autenticación.
+
+No agregues base de datos.
+
+No agregues funciones reales.
+
+Todo puede utilizar datos falsos (mock data).
+
+El objetivo es construir una interfaz moderna y profesional sobre la que después iremos añadiendo funcionalidades.
+
+---
+
+# TECNOLOGÍAS
+
+Utiliza exclusivamente:
+
+* Next.js (App Router)
+* React
+* TypeScript
+* TailwindCSS
+* Framer Motion
+* Lucide React Icons
+* Zustand (solo preparado)
+* shadcn/ui
+
+El código debe ser limpio, modular y fácil de ampliar.
+
+---
+
+# ESTILO VISUAL
+
+Quiero una interfaz inspirada en:
+
+* CapCut Desktop
+* Adobe Premiere Pro
+* DaVinci Resolve
+* Figma
+* Arc Browser
+
+No quiero copiar ninguna de ellas, solo inspirarme en su distribución.
+
+Características:
+
+* Tema oscuro.
+* Estilo minimalista.
+* Glassmorphism muy sutil.
+* Sombras suaves.
+* Bordes redondeados de 14 px.
+* Espaciado amplio.
+* Animaciones fluidas.
+* Colores modernos.
+* Tipografía Inter.
+
+Todo debe verse premium.
+
+---
+
+# ESTRUCTURA
+
+La aplicación debe ocupar toda la pantalla.
+
+Distribución:
+
+## Barra superior
+
+Debe incluir:
+
+* Logo de DevEditor.
+* Nombre del proyecto.
+* Botón Guardar.
+* Botón Exportar.
+* Botón Configuración.
+* Perfil de usuario (simulado).
+
+---
+
+## Panel izquierdo
+
+Un menú vertical con iconos y texto.
+
+Secciones:
+
+* Proyectos
+* Multimedia
+* Audio
+* Subtítulos
+* Plantillas
+* Favoritos
+* Exportar
+
+Cada sección debe cambiar el contenido del panel sin recargar la página.
+
+---
+
+## Panel central
+
+Debe mostrar una gran vista previa del vídeo.
+
+Solo un reproductor ficticio.
+
+Con:
+
+* Play
+* Pause
+* Tiempo actual
+* Duración
+* Barra de progreso
+
+No necesita reproducir vídeos todavía.
+
+---
+
+## Timeline
+
+Debajo del reproductor.
+
+Debe verse como un editor profesional.
+
+Mostrar:
+
+* Pista de vídeo
+* Pista de audio
+* Pista de subtítulos
+
+Con clips simulados.
+
+Debe permitir visualizar:
+
+* Clips de colores
+* Marcador de reproducción
+* Regla de tiempo
+* Zoom visual
+
+Solo diseño.
+
+---
+
+## Panel derecho
+
+Debe cambiar dependiendo de la herramienta seleccionada.
+
+Ejemplo:
+
+Si el usuario abre "Subtítulos":
+
+Mostrar:
+
+* Biblioteca de estilos
+* Vista previa
+* Botón Aplicar
+* Buscador
+* Categorías
+
+Todo con datos ficticios.
+
+---
+
+# PANTALLA DE SUBTÍTULOS
+
+Esta será la sección más importante.
+
+Diseña una biblioteca muy elegante.
+
+Cada plantilla debe mostrarse como una tarjeta.
+
+Cada tarjeta debe incluir:
+
+* Miniatura
+* Nombre
+* Categoría
+* Botón Vista previa
+* Botón Aplicar
+
+Crear al menos 20 plantillas falsas.
+
+Categorías:
+
+* TikTok
+* Shorts
+* Reels
+* Podcast
+* Gaming
+* Minimalista
+* Premium
+* Neón
+* Cinemático
+* Storytelling
+
+---
+
+# BARRA DE BÚSQUEDA
+
+Debe permitir buscar plantillas.
+
+Solo diseño.
+
+---
+
+# FILTROS
+
+Filtros visuales:
+
+* Más populares
+* Recientes
+* Favoritos
+* Nuevos
+
+---
+
+# RESPONSIVE
+
+Debe funcionar perfectamente en:
+
+* Escritorio
+* Tablet
+* Móvil
+
+En móvil:
+
+Los paneles laterales deben convertirse en menús deslizables.
+
+---
+
+# ANIMACIONES
+
+Utiliza Framer Motion para:
+
+* Abrir paneles.
+* Cambiar pestañas.
+* Hover de botones.
+* Aparición de tarjetas.
+* Menús.
+
+Todo debe sentirse fluido.
+
+---
+
+# COMPONENTES
+
+Cada parte debe ser un componente independiente.
+
+Ejemplo:
+
+/components
+
+TopBar.tsx
+
+Sidebar.tsx
+
+PreviewPlayer.tsx
+
+Timeline.tsx
+
+SubtitleLibrary.tsx
+
+SubtitleCard.tsx
+
+PropertiesPanel.tsx
+
+SearchBar.tsx
+
+ExportButton.tsx
+
+ProjectHeader.tsx
+
+---
+
+# OBJETIVO
+
+No implementes funcionalidades reales.
+
+Solo quiero una interfaz profesional, moderna y perfectamente organizada que sirva como base para construir DevEditor paso a paso.
+
+La calidad del diseño debe ser comparable con aplicaciones profesionales como CapCut Desktop o DaVinci Resolve, manteniendo una identidad visual propia.
